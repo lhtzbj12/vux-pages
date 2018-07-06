@@ -104,3 +104,20 @@ module.exports = vuxLoader.merge(webpackConfig, {
     }
   ]
 })
+
+/* 修改部分 ---------------- 开始 */
+module.exports = vuxLoader.merge(webpackConfig, {
+  plugins: [
+    {
+      name: 'vux-ui'
+    },
+    {
+      name: 'duplicate-style'
+    },
+    {
+      name: 'less-theme',
+      path: 'src/styles/theme.less'
+    }
+  ]
+})
+/* 修改部分 ---------------- 结束 */
