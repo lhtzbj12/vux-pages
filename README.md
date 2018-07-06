@@ -1,6 +1,7 @@
 # pages
 
 > A Vue.js project
+> 基于vux官方模析进行修改，实现多页面应用，每个页面有各个的路由和状态管理
 
 ## Build Setup
 
