@@ -1,7 +1,8 @@
 <template>
   <div>
-    <x-header>Hello VUX</x-header>
+    <x-header>这是Index</x-header>
     <router-view></router-view>
+    <router-link to="/ca">去组件A，演示Vuex</router-link>
   </div>
 </template>
 
