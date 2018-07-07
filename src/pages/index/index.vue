@@ -2,6 +2,7 @@
   <div>
     <x-header>这是Index</x-header>
     <router-view></router-view>
+    <div>{{ proname }}</div>
   </div>
 </template>
 
@@ -9,7 +10,12 @@
     import XHeader from 'vux/src/components/x-header/index'
     export default {
       name: 'index',
-      components: {XHeader}
+      components: {XHeader},
+      data () {
+        return {
+          proname: 'H5答题'
+        }
+      }
     }
 </script>
 

@@ -4,6 +4,7 @@
     <div>值：{{ stuname }}</div>
     <button @click="setname('A')">设置为A</button>
     <button @click="toB">去往B</button>
+    <div> {{ proname }}</div>
   </div>
 </template>
 
@@ -19,6 +20,11 @@
     },
     computed: {
       ...mapGetters(['stuname'])
+    },
+    data () {
+      return {
+        proname: 'H6答题'
+      }
     }
   }
 </script>
